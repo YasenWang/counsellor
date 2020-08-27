@@ -1,5 +1,5 @@
 var NGINX_REDIRECT='/github_auto_assignment'
-var SECRET=''
+var SECRET='counsellor'
 var SERVER_PORT=3000
 var SH_FILE='/data/wwwroot/counsellor/runner.sh'
 
