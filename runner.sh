@@ -8,7 +8,7 @@ SH_NAME='COUNSELLOR RUNNER'
 
 
 #====FUNCTION STAGE====
-#config virtual env.
+#config virtual env.TODO:test module
 function env() {
   if [ -d "$VIRTUAL_PATH" ];then
     cd "$VIRTUAL_PATH" || return
@@ -19,6 +19,10 @@ function env() {
 }
 #start project when physic server is restart.
 function start() {
+  echo ''
+}
+#stop project
+function stop() {
   echo ''
 }
 #update project when github has changed.

@@ -1,2 +1,4 @@
 /.gitignore
 /Lib
+/node_modules
+/package-lock.json

@@ -5,7 +5,7 @@ var SH_FILE='/data/wwwroot/counsellor/runner.sh'
 
 var http = require('http')
 var spawn = require('child_process').spawn
-var createHandler = require('github=webhook-handler')
+var createHandler = require('github-webhook-handler')
 var handler = createHandler({
     path:NGINX_REDIRECT,
     secret:SECRET
@@ -26,7 +26,7 @@ handler.on('push', function (event) {
     console.log('Received a push event for %s to %s',
         event.payload.repository.name,
         event.payload.ref)
-    runCommand('sh', [SH_FILE], function (txt) {
+    runCommand('sh', [SH_FILE] -update, function (txt) {
         console.log(txt)
     })
 })

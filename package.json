@@ -1,0 +1,8 @@
+{
+  "name": "counsellor",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "github-webhook-handler": "^1.0.0"
+  }
+}
