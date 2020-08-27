@@ -13,7 +13,7 @@ var handler = createHandler({
 
 http.createServer(function (req, res) {
     handler(req, res, function (err) {
-        res.statusCode(404);
+        res.statusCode=404;
         res.end('no such location')
     })
 }).listen(SERVER_PORT)
@@ -26,7 +26,7 @@ handler.on('push', function (event) {
     console.log('Received a push event for %s to %s',
         event.payload.repository.name,
         event.payload.ref)
-    runCommand('sh', [SH_FILE] -update, function (txt) {
+    runCommand('sh', [SH_FILE]+' -update', function (txt) {
         console.log(txt)
     })
 })
