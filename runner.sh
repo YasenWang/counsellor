@@ -29,6 +29,7 @@ function stop() {
 function update() {
   echo "Updating project from Git Server..."
   git pull
+  echo "Update successful!"
 }
 
 
@@ -38,6 +39,8 @@ if [ '-start' == "$1" ];then
   start
 elif [ '-update' == "$1" ]; then
   update
+else
+  echo "Unresolved Command:$1"
 fi
 
 
