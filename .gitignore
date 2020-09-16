@@ -4,3 +4,4 @@
 /package-lock.json
 /sdk/dingtalk
 /debug.log
+/db.sqlite3
